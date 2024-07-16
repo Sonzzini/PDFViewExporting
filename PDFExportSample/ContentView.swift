@@ -40,7 +40,7 @@ struct ContentView: View {
 		// Criar e apresentar o UIActivityViewController
 		let activityVC = UIActivityViewController(activityItems: [tempURL], applicationActivities: nil)
 		
-		// Configurar sourceView para iPad
+		// Configurar sourceView para iPad, FUNCIONA PARA iPhone!!
 		if let popoverController = activityVC.popoverPresentationController {
 			popoverController.sourceView = hostingController.view
 			popoverController.sourceRect = CGRect(x: hostingController.view.bounds.midX, y: hostingController.view.bounds.midY, width: 0, height: 0)

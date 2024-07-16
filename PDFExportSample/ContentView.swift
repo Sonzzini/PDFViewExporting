@@ -16,7 +16,7 @@ struct ContentView: View {
 			return
 		}
 		
-		// Crie uma instância do UIHostingController com a ContentView e passe o EnvironmentObject
+		// Crie uma instância do UIHostingController com a ContentView e passe o body da sua View
 		let hostingController = UIHostingController(rootView: self.body)
 		
 		rootVC.addChild(hostingController)
